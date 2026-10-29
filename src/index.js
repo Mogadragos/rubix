@@ -272,7 +272,7 @@ function resizeRendererToDisplaySize(renderer) {
 const animate = function () {
     requestAnimationFrame( animate );
 
-    if(rotating_face) if(rotating_face.KeepRotating(action_list)) {
+    if(rotating_face) if(rotating_face.KeepRotating(/*action_list*/)) {
         rotating_face.Disable();
         UpdateFaces();
         rotating_face = null;
